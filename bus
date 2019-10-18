@@ -6,7 +6,7 @@ print number_stops
 
 # 2. Assign a variable a list whose elements are the number of passengers in each stop: 
 # Each item depends on the previous item in the list + in - out.
-## I had some trouble with this one!
+
 
 num_stops = 0
 
