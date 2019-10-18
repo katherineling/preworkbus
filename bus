@@ -1,0 +1,31 @@
+# 1. Calculate the number of stops.
+stops = [(10,0), (7,2),(3,10),(5,0)]
+number_stops = len(stops)
+print number_stops
+
+
+# 2. Assign a variable a list whose elements are the number of passengers in each stop: 
+# Each item depends on the previous item in the list + in - out.
+## I had some trouble with this one!
+
+num_stops = 0
+
+num_passengers_in_each_stop = []
+ 
+for on,off in stops:
+    num_passengers_in_each_stop = [on - off]
+    num_stops += 1
+print(num_passengers_in_each_stop)
+    
+
+# 3. Find the maximum occupation of the bus.
+
+max_occupation = 0
+stops = [(10,0), (7,2),(8,10),(5,0)]
+num_stops = 0
+for on, off in stops:
+    max_occupation += on - off
+    num_stops += 1
+    if max_occupation >= 50:
+        break
+print("maximum occupation:", max_occupation)
